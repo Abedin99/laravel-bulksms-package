@@ -1,0 +1,29 @@
+{
+    "name": "abedin99/bulksms",
+    "description": "Laravel bulksms Package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abedin99",
+            "email": "pjoy813@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Abedin99\\Bulksms\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abedin99\\Bulksms\\BulksmsServiceProvider"
+            ],
+            "aliases": {
+                "Bulksms": "Abedin99\\Bulksms\\Facades\\Bulksms"
+            }
+        }
+    }
+}
