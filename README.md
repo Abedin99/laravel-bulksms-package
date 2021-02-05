@@ -10,19 +10,25 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 This package can be used with Laravel 5.8 or higher.
 
-You should publish the migration and the config/bulksms.php config file with:
+1. From your projects root folder in terminal run:
 
-`
-    Abedin99\Bulksms\BulksmsServiceProvider::class,
-`
+```bash
+    composer require abedin99/bulksms
+```
+2. You should publish the migration and the config/bulksms.php config file with:
 
-creating a blogpackage.php file in the /config directory of the Laravel project in which the package was required.
+```php
+    'providers' => [
+	    Abedin99\Bulksms\BulksmsServiceProvider::class,
+	];
+```
+
+3. Creating a blogpackage.php file in the /config directory of the Laravel project in which the package was required.
 
     php artisan vendor:publish --provider="Abedin99\Bulksms\BulksmsServiceProvider" --tag="config"
 
 
-## .env Setup
-The next thing we are going to do is to add our bulksms credentials to the .env file.
+4. The next thing we are going to do is to add our bulksms credentials to the .env file.
 
 `
 BULKSMS_URL=<url>
