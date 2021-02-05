@@ -60,5 +60,9 @@ This package can be used with Laravel 5.8 or higher.
 
 ## Usage Example
 
-1 [How to Implement Account Verification and Login by Phone in Laravel](ACCOUNT_VERIFICATION_BY_PHONE.md).
+1 [How to Implement Account Verification and Login by Phone in Laravel](docs/ACCOUNT_VERIFICATION_BY_PHONE.md).
 
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
