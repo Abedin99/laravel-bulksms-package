@@ -30,13 +30,31 @@ This package can be used with Laravel 5.8 or higher.
 
 4. The next thing we are going to do is to add our bulksms credentials to the .env file.
 
-`
-BULKSMS_URL=<url>
+```bash
+    BULKSMS_URL=<url>
 
-BULKSMSBD_USERNAME=<username>
+    BULKSMSBD_USERNAME=<username>
 
-BULKSMSBD_PASSWORD=<password>
-`
+    BULKSMSBD_PASSWORD=<password>
+```
+
+## Usage
+
+```php
+    use Abedin99\Bulksms\Bulksms;
+
+    Route::get('/bulksms', function() {
+        $code = random_int(100000, 999999);
+
+        $number = "+880XXXXXXXXXX"; // with country and area code
+
+        $txt = "Hi, thanks for Joining. This is your verification code: {$code}";
+
+        $send = Bulksms::send('+8801611516222', $txt);
+
+        return $send;
+    });
+```
 
 ## Modifying Our User Model
 
